@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #171717;
+    color: white;
+}
+
+.header{
+text-align: center;
+margin: 20px;
+font-size: 20px;
+}
+
+.subtext{
+    margin: 30px 60px;
+}
+
+.text-bar{
+    background: rgba(255,255,255,0.3);
+    width: 70%;
+    max-width: 350px;
+    margin-left: 60px;
+    border: none;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.text:focus {
+    border: 1px solid #ffffff;
+    outline: none;
+  }
+
+.text-bar::placeholder{
+    color: #e5e5e5;
+}
+
+.submit-btn{
+    border-radius: 3px;
+    margin-left: 20px;
+    border: none;
+    background: #C620A7;
+    color: #ffffff;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+
+.tasks-container{
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outer-box{
+    width: 100%;
+    max-width:380px;
+    display: flex;
+    margin: 30px 20px;
+    align-items: center;
+}
+
+.complete .task-box{
+    background: #202020;
+    border: 1px solid #7AB530;
+}
+
+.complete::after{
+    content: '✔';
+    position: relative;
+    right: 10px;
+    background: #7AB530;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #5c5c5c;
+}
+
+.task-box{
+    background: #2f2f2f;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 16 rgba(0,0,0,0.8);
+}
+
+.task-no{
+    margin: 5px;
+}
+
+.task-inner-box{
+    padding: 20px;
+}
+
+.complete-btn{
+    cursor: pointer;
+    background: #C620A7;
+    border:none;
+    border-radius: 3px;
+    margin-right: 25px;
+    color: #ffffff;
+    width: 200px;
+    padding: 4px;
+}
+
+.complete .complete-btn{
+    background: none;
+    color: #afafaf;
+    cursor: not-allowed;
+}
+
+
+.delete-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #afafaf;
+}
+
+.delete-btn:hover{
+    color: #C620A7;
+}
