@@ -38,13 +38,13 @@ function App() {
   },[])
 
   return (
-    <>
+    <div className='container'>
     <div className="header">
       To-Do List
     </div>
      <Search handleSubmit={handleSubmit}/>
      <Tasks handleComplete={handleComplete} handleDelete={handleDelete} taskList={taskList}/>
-    </>
+    </div>
   );
 }
 
