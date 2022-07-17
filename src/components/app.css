@@ -25,6 +25,16 @@ font-size: 20px;
     margin: 30px 40px;
 }
 
+.selector-box{
+    margin: 10px 40px;
+}
+
+.selector-box select{
+    background: #202020;
+    color: #ffffff;
+    padding: 4px 15px;
+}
+
 .text-bar{
     background: rgba(255,255,255,0.3);
     width: 70%;
